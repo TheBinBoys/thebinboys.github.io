@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Bin Boys — Wheelie Bin Cleaning</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMxQjQzMzIiLz4KICA8IS0tIHNwYXJrbGUgLS0+CiAgPHBhdGggZD0iTTUwIDEwIEw1MiAxNSBMNTcgMTcgTDUyIDE5IEw1MCAyNCBMNDggMTkgTDQzIDE3IEw0OCAxNSBaIiBmaWxsPSIjRkZDODU3Ii8+CiAgPCEtLSBiaW4gbGlkIC0tPgogIDxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjciIHJ4PSIyIiBmaWxsPSIjQjRFMzNEIi8+CiAgPHJlY3QgeD0iMjciIHk9IjExIiB3aWR0aD0iMTAiIGhlaWdodD0iNiIgcng9IjIiIGZpbGw9IiNCNEUzM0QiLz4KICA8IS0tIGJpbiBib2R5IC0tPgogIDxwYXRoIGQ9Ik0xOSAyNSBMNDUgMjUgTDQyIDU0IEM0MiA1NiA0MCA1OCAzOCA1OCBMMjYgNTggQzI0IDU4IDIyIDU2IDIyIDU0IFoiIGZpbGw9IiMyRDZBNEYiIHN0cm9rZT0iIzFCNDMzMiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8IS0tIHJpYnMgLS0+CiAgPGxpbmUgeDE9IjI2IiB5MT0iMjciIHgyPSIyNC41IiB5Mj0iNTUiIHN0cm9rZT0iIzFCNDMzMiIgc3Ryb2tlLXdpZHRoPSIxLjIiIG9wYWNpdHk9IjAuNSIvPgogIDxsaW5lIHgxPSIzMiIgeTE9IjI3IiB4Mj0iMzIiIHkyPSI1NiIgc3Ryb2tlPSIjMUI0MzMyIiBzdHJva2Utd2lkdGg9IjEuMiIgb3BhY2l0eT0iMC41Ii8+CiAgPGxpbmUgeDE9IjM4IiB5MT0iMjciIHgyPSIzOS41IiB5Mj0iNTUiIHN0cm9rZT0iIzFCNDMzMiIgc3Ryb2tlLXdpZHRoPSIxLjIiIG9wYWNpdHk9IjAuNSIvPgogIDwhLS0gc3VuZ2xhc3NlcyAtLT4KICA8cmVjdCB4PSIyMSIgeT0iMzMiIHdpZHRoPSI5IiBoZWlnaHQ9IjYiIHJ4PSIyIiBmaWxsPSIjMTExIi8+CiAgPHJlY3QgeD0iMzQiIHk9IjMzIiB3aWR0aD0iOSIgaGVpZ2h0PSI2IiByeD0iMiIgZmlsbD0iIzExMSIvPgogIDxsaW5lIHgxPSIzMCIgeTE9IjM1LjUiIHgyPSIzNCIgeTI9IjM1LjUiIHN0cm9rZT0iIzExMSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPCEtLSBncmluIC0tPgogIDxwYXRoIGQ9Ik0yNCA0NSBRMzIgNTEgNDAgNDUiIHN0cm9rZT0iIzExMSIgc3Ryb2tlLXdpZHRoPSIyLjIiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#12201a;
+    --bin-green:#1B4332;
+    --bin-green-2:#2D6A4F;
+    --lime:#B4E33D;
+    --gold:#FFC857;
+    --grime:#6B4226;
+    --cream:#F7F5EF;
+    --white:#ffffff;
+    --radius:16px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'DM Sans', sans-serif;
+    line-height:1.5;
+    overflow-x:hidden;
+  }
+  h1,h2,h3, .display{
+    font-family:'Archivo Black', sans-serif;
+    text-transform:uppercase;
+    line-height:1.02;
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit;}
+  img,svg{display:block; max-width:100%;}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px;}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--cream);
+    border-bottom:3px solid var(--ink);
+  }
+  nav.wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-top:16px; padding-bottom:16px;
+  }
+  .brand{display:flex; align-items:center; gap:10px; font-family:'Archivo Black'; font-size:20px; text-transform:uppercase;}
+  .brand img{width:36px; height:36px; border-radius:8px;}
+  nav ul{display:flex; gap:28px; list-style:none;}
+  nav ul a{font-weight:700; font-size:14px; text-transform:uppercase; letter-spacing:0.04em; text-decoration:none; position:relative;}
+  nav ul a::after{content:""; position:absolute; left:0; bottom:-4px; width:0; height:3px; background:var(--lime); transition:width .2s ease;}
+  nav ul a:hover::after{width:100%;}
+  .nav-cta{
+    background:var(--bin-green); color:var(--cream); font-weight:700; text-transform:uppercase;
+    font-size:13px; padding:10px 18px; border-radius:999px; text-decoration:none; letter-spacing:0.03em;
+    border:2px solid var(--ink);
+  }
+  @media (max-width:760px){ nav ul{display:none;} }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    border-bottom:3px solid var(--ink);
+    background:
+      radial-gradient(circle at 85% 20%, rgba(180,227,61,0.35), transparent 45%),
+      var(--bin-green);
+    color:var(--cream);
+    overflow:hidden;
+  }
+  .hero .wrap{
+    display:grid; grid-template-columns:1.15fr 0.85fr; align-items:center;
+    gap:40px; padding-top:64px; padding-bottom:56px; position:relative; z-index:2;
+  }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--lime); color:var(--ink); font-weight:700; font-size:12px;
+    text-transform:uppercase; letter-spacing:0.08em; padding:6px 12px; border-radius:999px; margin-bottom:18px;
+  }
+  .hero h1{ font-size:clamp(38px, 5.6vw, 68px); color:var(--white); }
+  .hero h1 span{ color:var(--lime); }
+  .hero p.lede{
+    margin-top:20px; max-width:46ch; font-size:18px; color:#dfe9df;
+  }
+  .hero-ctas{display:flex; gap:14px; margin-top:30px; flex-wrap:wrap;}
+  .btn{
+    display:inline-block; font-weight:700; text-decoration:none; text-transform:uppercase;
+    font-size:14px; letter-spacing:0.03em; padding:14px 24px; border-radius:999px; border:2px solid var(--ink);
+    transition:transform .15s ease;
+  }
+  .btn:hover{ transform:translateY(-2px); }
+  .btn-primary{ background:var(--gold); color:var(--ink); }
+  .btn-ghost{ background:transparent; color:var(--cream); border-color:var(--cream); }
+
+  .hero-art{ position:relative; display:flex; justify-content:center; }
+  .bin-hero{ width:min(320px, 80%); animation:bob 4.5s ease-in-out infinite; }
+  @keyframes bob{ 0%,100%{transform:translateY(0) rotate(-1.5deg);} 50%{transform:translateY(-10px) rotate(1.5deg);} }
+  .stink-line{ animation:rise 2.4s ease-in-out infinite; opacity:0; }
+  .stink-line:nth-child(2){ animation-delay:.5s; }
+  .stink-line:nth-child(3){ animation-delay:1s; }
+  @keyframes rise{ 0%{opacity:0; transform:translateY(0);} 20%{opacity:.65;} 100%{opacity:0; transform:translateY(-18px);} }
+
+  .marquee{
+    background:var(--ink); color:var(--lime); overflow:hidden; white-space:nowrap; border-bottom:3px solid var(--ink);
+  }
+  .marquee div{
+    display:inline-block; padding:10px 0; font-family:'Archivo Black'; font-size:14px; letter-spacing:0.08em; text-transform:uppercase;
+    animation:scroll 22s linear infinite;
+  }
+  .marquee span{ margin:0 22px; }
+  @keyframes scroll{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
+  @media (prefers-reduced-motion: reduce){
+    .marquee div, .bin-hero, .stink-line{ animation:none !important; }
+  }
+
+  /* ---------- SECTION HEADS ---------- */
+  section{ padding:88px 0; border-bottom:3px solid var(--ink); }
+  section:last-of-type{ border-bottom:none; }
+  .section-tag{
+    font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:0.1em; color:var(--bin-green-2);
+    margin-bottom:10px;
+  }
+  .section-head{ display:flex; justify-content:space-between; align-items:flex-end; gap:24px; margin-bottom:48px; flex-wrap:wrap; }
+  .section-head h2{ font-size:clamp(28px,4vw,44px); max-width:16ch; }
+  .section-head p{ max-width:38ch; color:#3d4a42; }
+
+  /* ---------- SERVICES ---------- */
+  .services{ background:var(--white); }
+  .service-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  .service-card{
+    background:var(--cream); border:2.5px solid var(--ink); border-radius:var(--radius);
+    padding:28px; position:relative; transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .service-card:hover{ transform:translateY(-6px); box-shadow:8px 8px 0 var(--ink); }
+  .service-num{ font-family:'Archivo Black'; font-size:13px; color:var(--bin-green-2); margin-bottom:14px; }
+  .service-card h3{ font-size:20px; margin-bottom:10px; text-transform:none; }
+  .service-card p{ font-size:15px; color:#3d4a42; }
+  .service-price{ margin-top:18px; font-family:'Archivo Black'; font-size:22px; color:var(--ink); }
+  .service-price span{ font-family:'DM Sans'; font-size:13px; color:#3d4a42; text-transform:none; font-weight:400; }
+  .cash-label{
+    margin-top:10px; display:inline-flex; align-items:center; gap:6px; background:var(--gold); color:var(--ink);
+    font-weight:700; font-size:12px; text-transform:uppercase; letter-spacing:0.04em; padding:5px 12px; border-radius:999px;
+    border:1.5px solid var(--ink);
+  }
+  @media (max-width:860px){ .service-grid{ grid-template-columns:1fr; } }
+  .service-grid-single{ grid-template-columns:1fr; max-width:380px; }
+
+  /* ---------- BEFORE/AFTER ---------- */
+  .transform{ background:var(--bin-green); color:var(--cream); }
+  .transform .section-tag{ color:var(--lime); }
+  .transform .section-head p{ color:#dfe9df; }
+  .compare{
+    display:grid; grid-template-columns:1fr 1fr; gap:0; border:3px solid var(--ink); border-radius:var(--radius); overflow:hidden;
+  }
+  .compare > div{ padding:40px 30px; position:relative; }
+  .compare .before{ background:var(--grime); }
+  .compare .after{ background:var(--lime); color:var(--ink); }
+  .compare-label{ font-family:'Archivo Black'; font-size:14px; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:16px; display:inline-block; padding:5px 12px; border-radius:999px; }
+  .compare .before .compare-label{ background:#fff2; }
+  .compare .after .compare-label{ background:#fff8; }
+  .compare svg{ width:120px; margin:16px auto; }
+  .compare p{ text-align:center; font-weight:700; }
+  @media (max-width:700px){ .compare{ grid-template-columns:1fr; } }
+
+  /* ---------- TESTIMONIALS ---------- */
+  .about-section{ background:var(--white); }
+  .about-copy{ max-width:64ch; font-size:18px; color:#2c362f; }
+
+  /* ---------- CONTACT ---------- */
+  .contact{ background:var(--gold); }
+  .contact-wrap{ display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; }
+  .contact h2{ font-size:clamp(28px,4vw,44px); margin-bottom:14px; }
+  .contact p.lede{ max-width:40ch; color:#3d2f00; margin-bottom:24px; }
+  .contact-list{ list-style:none; display:flex; flex-direction:column; gap:12px; font-weight:700; }
+  form{ background:var(--cream); border:3px solid var(--ink); border-radius:var(--radius); padding:28px; display:flex; flex-direction:column; gap:14px; }
+  label{ font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; }
+  input, select, textarea{
+    font-family:'DM Sans'; padding:12px 14px; border-radius:10px; border:2px solid var(--ink); background:var(--white); font-size:15px;
+  }
+  textarea{ resize:vertical; min-height:80px; }
+  form .btn{ align-self:flex-start; margin-top:6px; cursor:pointer; background:var(--bin-green); color:var(--cream); }
+  @media (max-width:860px){ .contact-wrap{ grid-template-columns:1fr; } }
+  .contact-solo{ max-width:480px; }
+  .contact-solo .lede{ color:#3d2f00; margin-bottom:24px; }
+
+  footer{ background:var(--ink); color:#c9d3c9; padding:36px 0; }
+  footer .wrap{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-size:13px; }
+  footer .brand{ color:var(--cream); }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="brand">
+      <svg width="36" height="36" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="border-radius:8px; flex-shrink:0;">
+        <rect width="64" height="64" rx="14" fill="#1B4332"/>
+        <path d="M50 10 L52 15 L57 17 L52 19 L50 24 L48 19 L43 17 L48 15 Z" fill="#FFC857"/>
+        <rect x="16" y="16" width="32" height="7" rx="2" fill="#B4E33D"/>
+        <rect x="27" y="11" width="10" height="6" rx="2" fill="#B4E33D"/>
+        <path d="M19 25 L45 25 L42 54 C42 56 40 58 38 58 L26 58 C24 58 22 56 22 54 Z" fill="#2D6A4F" stroke="#1B4332" stroke-width="1.5"/>
+        <line x1="26" y1="27" x2="24.5" y2="55" stroke="#1B4332" stroke-width="1.2" opacity="0.5"/>
+        <line x1="32" y1="27" x2="32" y2="56" stroke="#1B4332" stroke-width="1.2" opacity="0.5"/>
+        <line x1="38" y1="27" x2="39.5" y2="55" stroke="#1B4332" stroke-width="1.2" opacity="0.5"/>
+        <rect x="21" y="33" width="9" height="6" rx="2" fill="#111"/>
+        <rect x="34" y="33" width="9" height="6" rx="2" fill="#111"/>
+        <line x1="30" y1="35.5" x2="34" y2="35.5" stroke="#111" stroke-width="2"/>
+        <path d="M24 45 Q32 51 40 45" stroke="#111" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+      </svg>
+      The Bin Boys
+    </div>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#transform">Results</a></li>
+      <li><a href="#about">Who We Are</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="#contact">Call us</a>
+  </nav>
+</header>
+
+<div class="marquee">
+  <div>
+    <span>★ WHEELIE CLEAN ★</span><span>NO STINK, NO JUDGMENT</span><span>SAME-WEEK BOOKINGS</span><span>WE BRING THE WATER</span>
+    <span>★ WHEELIE CLEAN ★</span><span>NO STINK, NO JUDGMENT</span><span>SAME-WEEK BOOKINGS</span><span>WE BRING THE WATER</span>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">🗑️ Curbside bin detailing, seriously</span>
+      <h1>Your bins.<br>Our <span>problem.</span></h1>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#contact">Book a clean</a>
+        <a class="btn btn-ghost" href="#services">See pricing</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg class="bin-hero" viewBox="0 0 220 260" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="110" cy="245" rx="70" ry="10" fill="#00000030"/>
+        <g class="stink-line"><path d="M60 40 q-8 -16 0 -28" stroke="#B4E33D" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+        <g class="stink-line"><path d="M110 30 q-8 -16 0 -30" stroke="#B4E33D" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+        <g class="stink-line"><path d="M160 40 q-8 -16 0 -28" stroke="#B4E33D" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+        <rect x="70" y="52" width="80" height="20" rx="6" fill="#B4E33D" stroke="#12201a" stroke-width="3"/>
+        <rect x="95" y="38" width="30" height="16" rx="5" fill="#B4E33D" stroke="#12201a" stroke-width="3"/>
+        <path d="M62 74 L158 74 L146 232 C145 240 138 246 130 246 L90 246 C82 246 75 240 74 232 Z" fill="#2D6A4F" stroke="#12201a" stroke-width="3.5"/>
+        <line x1="82" y1="80" x2="78" y2="235" stroke="#12201a" stroke-width="2" opacity="0.4"/>
+        <line x1="110" y1="80" x2="110" y2="238" stroke="#12201a" stroke-width="2" opacity="0.4"/>
+        <line x1="138" y1="80" x2="142" y2="235" stroke="#12201a" stroke-width="2" opacity="0.4"/>
+        <rect x="76" y="120" width="24" height="16" rx="4" fill="#12201a"/>
+        <rect x="120" y="120" width="24" height="16" rx="4" fill="#12201a"/>
+        <line x1="100" y1="128" x2="120" y2="128" stroke="#12201a" stroke-width="5"/>
+        <path d="M84 160 Q110 178 136 160" stroke="#12201a" stroke-width="6" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-tag">What we do</div>
+        <h2>One plan. Zero shame.</h2>
+      </div>
+      <p>Pressure jets, eco-safe sanitizer, and a deodorizing finish, every single visit. Priced by how many bins need saving.</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="service-num">The Regular</div>
+        <h3>1 Bin</h3>
+        <p>One bin, one visit. Because a stenchy bin doesn't need company to embarrass you.</p>
+        <div class="service-price">AUD $6.99 <span>/ visit</span></div>
+        <div class="cash-label">💵 Cash only</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">The Regular</div>
+        <h3>2 Bins</h3>
+        <p>Two bins, one visit. Because one clean bin next to a stenchy one just looks worse.</p>
+        <div class="service-price">AUD $12.99 <span>/ visit</span></div>
+        <div class="cash-label">💵 Cash only</div>
+      </div>
+      <div class="service-card">
+        <div class="service-num">The Regular</div>
+        <h3>3 Bins</h3>
+        <p>Three bins, one visit. Because a full lineup of stenchy bins is a group effort.</p>
+        <div class="service-price">AUD $16.99 <span>/ visit</span></div>
+        <div class="cash-label">💵 Cash only</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="transform" id="transform">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-tag">Receipts</div>
+        <h2>We're not exaggerating</h2>
+      </div>
+      <p>This is what leaves your driveway versus what we started with. No filters, just pressure jets and commitment.</p>
+    </div>
+    <div class="compare">
+      <div class="before">
+        <span class="compare-label">Before</span>
+        <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="20" width="60" height="80" rx="6" fill="#8a5a3a" stroke="#12201a" stroke-width="3"/>
+          <circle cx="35" cy="45" r="4" fill="#12201a" opacity="0.5"/>
+          <circle cx="55" cy="60" r="6" fill="#12201a" opacity="0.4"/>
+          <circle cx="65" cy="80" r="3" fill="#12201a" opacity="0.5"/>
+          <path d="M30 30 q-6 -12 2 -20" stroke="#dcd2a0" stroke-width="3" fill="none"/>
+          <path d="M70 30 q6 -12 -2 -20" stroke="#dcd2a0" stroke-width="3" fill="none"/>
+        </svg>
+        <p>Existential crisis, wheeled</p>
+      </div>
+      <div class="after">
+        <span class="compare-label">After</span>
+        <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="20" width="60" height="80" rx="6" fill="#2D6A4F" stroke="#12201a" stroke-width="3"/>
+          <path d="M30 20 L30 100" stroke="#12201a" stroke-width="1.5" opacity="0.3"/>
+          <path d="M50 20 L50 100" stroke="#12201a" stroke-width="1.5" opacity="0.3"/>
+          <path d="M70 20 L70 100" stroke="#12201a" stroke-width="1.5" opacity="0.3"/>
+          <circle cx="50" cy="10" r="14" fill="none" stroke="#12201a" stroke-width="2"/>
+          <path d="M44 10 l4 4 l8 -8" stroke="#12201a" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p>Certified fresh, verified spotless</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section" id="about">
+  <div class="wrap">
+    <div class="section-tag">Who we are</div>
+    <h2 style="font-size:clamp(28px,4vw,44px); max-width:16ch; margin-bottom:24px;">Local boys. Stenchy bins. No excuses.</h2>
+    <p class="about-copy">The Bin Boys are a group of boys who are keen on starting a business, and will range from Mordialloc, Chelsea, Waterways, and Edithvale to clean your stenchy bin. If we are not available on the day you planned on us being, please have sympathy as we are only just starting. After all, you pay once we are at your house, and not online, for specific reasons.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-solo">
+    <div class="section-tag">Get in touch</div>
+    <h2>Let's fix that smell</h2>
+    <p class="lede">Give us a call and tell us where your bin lives and what it's done to deserve this.</p>
+    <ul class="contact-list">
+      <li>📞 0442 092 8392</li>
+      <li>✉️ thebinbros21@gmail.com</li>
+      <li>📍 Serving Mordialloc, Chelsea, Waterways &amp; Edithvale</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">🗑️ The Bin Boys</div>
+    <div>&copy; 2026 The Bin Boys. Bins cleaned, dignity restored.</div>
+  </div>
+</footer>
+
+</body>
+</html>
